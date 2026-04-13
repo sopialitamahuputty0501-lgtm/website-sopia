@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #4facfe;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #4facfe;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .cv-item {
+      margin-bottom: 10px;
+    }
+
+    /* Social Media Buttons */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .WhatsApp { background-color: #00b521; }
+        .github { background-color: #333; }
+        .instagram { background-color: #d1314e; }
+        
+        .btn:hover { opacity: 0.8; }
+
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #ffffff08;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio Saya</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <img src="popy.jpeg" alt="Foto Profil" class="profile-img">
+      <h2> Sopia Litamahuputty</h2>
+      <p>Selamat datang di website portofolio saya</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        <p>Saya adalah seorang mahasiswa semester 4 . saya kuliah di INSTITUT AGAMA KRISTEN NEGERI AMBON 
+           saya dari Fakultas Sains Dan Teknologi Program Studi Sistem Informasi 
+           Saya suka belajar hal baru dan mengembangkan kemampuan saya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <div class="container">
+      <h2>Curriculum Vitae</h2>
+      <div class="card">
+        <div class="cv-item">
+          <strong>Pendidikan :</strong>
+          <p> SD INPRES 35 PASSO (2011-2017)</p>
+          <p> SMP NEGERI 20 AMBON (2018-2020)</p>
+          <p> SMA NEGERI 14 AMBON (2021-2023)</p>
+          <p>INSTITUT AGAMA KRISTEN NEGERI AMBON</p>
+          
+        </div>
+        
+        <div class="cv-item">
+          <strong>Pengalaman :</strong>
+          <p> Pengalaman di Kampung (Negeri) Itawaka, Pulau Saparua, Maluku, 
+              menawarkan perpaduan keindahan alam laut dan kekayaan budaya lokal. 
+              Wisatawan dapat menikmati snorkeling dan diving di perairan dengan gradasi warna indah,
+              terumbu karang, serta ikan langka. Selain itu, pengunjung dapat mempelajari tradisi budaya lokal 
+              yang kental.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Kontak</h2>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Sopia Litamahuputty" required>
+          <input type="email" placeholder="sopialitamahuputty0501@gmail.com" required>
+          <textarea rows="5" placeholder="Pesan" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="Social-Links">
+        <a href="https://wa.me/6285221777386" target="_blank" class=" btn Chat WhatsApp saya ">WhatsApp</a>
+        <a href="https://github.com/sopialitamahuputty0501-lgtm/popy.github.io.git" target="_blank" class="btn github">GitHub</a>
+        <a href="https://instagram.com/sofia_litamahuputty " target="_blank" class="btn instagram">Instagram</a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 SOPIA LITAMAHUPUTTY</p>
+  </footer>
+
+</body>
+</html>
